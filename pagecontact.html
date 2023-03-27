@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mainstylesheet.css">   
+    <title>Contact</title>
+</head>
+<body>
+
+
+
+<!--Header/Nav-->
+<header>
+        <div class="nav">
+        <a href="https://www.supinfo.com/"> <img class="logosupfinfo" src="image/logoblanc.png" alt="Logo SupInfo"></a>
+        <p class="ecriturenavbarlogo"> <b>SUPINFO</b> depuis 1965 </p>
+        <a href="homepage.html" class="nav-lien">Accueil</a>
+        <a href="planningpremieresemaine.html" class="nav-lien">Première Semaine</a>
+        <a href="themes.html" class="nav-lien">Thèmes abordés</a>
+        <a href="trombinoscope.html" class="nav-lien">Nos étudiants</a>
+        <a href="pagecontact.html" class="nav-lien actuelle">Contacts</a>
+        </div>
+        </header>
+        
+        
+<!--Section-->
+<section>
+<div class="titredelapagecontact"><h2>On démenage !</h2></div>
+
+<div class="sectioncoordonée">
+
+<div class="divphotoecole"> <img src="image/supinfobatiment.png" alt="Photo Batiment supinfo"></div> 
+
+<div class="sectioncontactcolonne">
+<div class="divadresse"> <p> <b> Vous pouvez nous retrouver dorénavant au bâtiment 1<br>du 8 Bis rue Daniel Mayer à Tours Nord (37100).</b></p></div>
+
+<div class="divcoordoné"> 
+<div class="diccontactdirectrice"><p><b>Directrice :</b> <br>Numéro<br>Adresse mail</p></div>
+<div class="diccontactsecretaire"><p><b>Secrétaire Pédagogique :</b> <br>Numéro<br>Adresse mail</p></div>
+</div>
+</div>
+</div>
+
+
+<!--Formulaire de pour être contacter -->
+<div class="sectioncontactformulaire">
+        <form action="handleForm.php" method="POST" enctype="multipart/form-data"
+            name="formLog" id="formLog">
+        <!--Titre-->
+        <div class="formulairecontacttitre"> <h3>Formulaire de Contact</h3></div>
+<div class="formulairecontactligne1">
+        <div class="formulairecontactcolonne1">
+        <!--nom-->
+        <div class="formulairecontactnom"><p><input type="text" name="nom" id="Nom" placeholder="Nom"></p></div>
+        
+        <!--prenom-->
+        <div class="formulairecontactprenom"><p><input type="text" name="prenom" id="prenom" placeholder="Prénom"></p></div>
+        
+        <!--Sexe-->
+        <div class="formulairecontactsexe">
+            <input type="radio" name="M" id="radioM"> <b>M</b>
+            <input type="radio" name="M" id="radioMme"> <b>Mme</b>
+            <input type="radio" name="M" id="radioMlle"> <b>Mlle</b>
+        </div>
+        
+        <!--age-->
+        <div class="formulairecontactage"><p><input type="text" name="age" id="age" placeholder="Age"></p></div>
+        
+        <!--Adrresse mail--> 
+        <div class="formulairecontactmail"><p><input type="email" name="email" id="email" placeholder="Email"></p></div>
+        
+        <!--Quelle campus-->
+        <div class="formulairecontactcampustexte">
+        <b>Quel campus vous intéresse ?</b></div>
+                <!--Quelle campus Chois-->
+            <div class="formulairecontactcampus">
+            <p><select name="nivscolaire" id="nivscolaire">
+                <option value="Caen">Caen</option>
+                <option value="Lille">Lille</option>
+                <option value="Paris">Paris</option>
+                <option value="Tours">Tours</option>
+                <option value="Lyon">Lyon</option>
+              </select></p>
+        </div>
+        </div>
+
+        <div class="formulairecontactcolonne2">
+        <!--Quelle niveau scolaire-->
+        <div class="formulairecontactniveautexte"></div>
+        <b> Quel est votre niveau scolaire actuel ? </b>
+            <!--Quelle niveau scolaire-->
+            <div class="formulairecontactniveau">
+                <p><select name="nivscolaire" id="nivscolaire">
+                    <option value="bac">Bac</option>
+                    <option value="bac+1">Bac +1</option>
+                    <option value="bac+2">Bac +2</option>
+                    <option value="bac+3">Bac +3</option>
+                    <option value="bac+4">Bac +4</option>
+                    <option value="bac+5">Bac +5</option>
+                  </select></p>
+            </div>
+        
+        <!--Quelle filiaire (filliaire du baccalauréat et universitaire)-->
+        <div class="formulairecontactfilliaire">
+        <p><input type="filliaire" name="filliaire" id="filliaire" placeholder="Quelle est votre filière actuel ?"></p>
+        </div>
+        
+        <!--Dernier diplomes obtenue-->
+        <div class="formulairecontactdernierdiplome">
+            <p><input type="dernierdiplome" name="dernierdiplome" id="dernierdiplome" placeholder="Quel est votre denier diplôme obtenu ?"></p>
+        </div>
+        
+        <!--Question-->
+        <div class="formulairecontactquestionutilisateur">
+        <textarea name="questionuser" id="questionuser" cols="40" rows="10" placeholder="Une question à nous soumettre ?"></textarea>
+        </div>
+        </div>
+</div>
+        <!--Envoyer--> <!--effacer-->
+        <div class="formulairecontactbouton">
+<div class="formulairecontactboutonenvoyer"><p><input type="submit" value="Envoyer"></p></div>
+<div class="formulairecontactboutonreset"><p><input type="reset" value=" Effacer"></p></div> 
+        </div>
+        </form>
+        </div>
+        
+</section>
+
+<!--Aside-->
+<aside>
+</aside>
+
+
+<!--Footer-->
+<footer>
+        <div class="footer">
+        
+        <div class="footercontact"><b>Contacts</b>
+        <div class="footercontactsize">
+        <p><b>Directrice :</b> <br>Numéro<br>Adresse mail</p>
+        <p><b>Secrétaire Pédagogique :</b> <br>Numéro<br>Adresse mail</p>
+        </div>
+        </div>
+        
+        <div class="footeradress"><b>Adresse</b> 
+        <div class="footeradresssize">
+        8 Bis rue Daniel Mayer <br>
+        37100 tours
+        </div>
+        </div>
+        
+        <div class="footermenu"><b>Menu</b>
+        <ul class="footermenusize">
+                <li<a href="homepage.html">Accueil</a></li>
+                <li><a href="planningpremieresemaine.html">Première Semaine</a></li>
+                <li><a href="themes.html">Thèmes abordés</a></li>
+                <li><a href="trombinoscope.html">Nos étudiants</a></li>
+                <li><a href="pagecontact.html">Contacts</a></li>
+        </ul>
+        </div>
+        <div class="footerlegal"> <b>Mentions légales</b>
+        <ul class="footerlegalsize">
+                <li><a href="https://unsplash.com/">Images libres de droits: Unsplash</a></li>
+                <li><a href="https://fontawesome.com/">Émoticônes: Font Awesome</a></li>
+                <li><a href="https://fonts.google.com/">Police d'écriture: Google Font</a></li>
+        </ul>
+        </div>
+        
+        <div class="footerdroit">
+        <p> Site WEB créé dans le cadre d'un projet scolaire <br>
+        &copy;&copy; SupInfo, MERCIER Yannis, PREUVOST Paul : tous droits reservés</p></div>
+        </div>
+        </footer>
+</body>
+</html>
